@@ -16,7 +16,7 @@ Use texFigure() instead of figure() and texSaveFig() instead of savefig(). Both 
 
 Minimal working example:
 
-´´´python
+```python
 from pylab import *
 from texplt import texSaveFig, texFigure
 
@@ -25,4 +25,4 @@ texFigure()
 plot(list(range(1, 10)))
 
 texSaveFig("test.pdf")
-´´´
+```
