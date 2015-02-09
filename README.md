@@ -32,7 +32,7 @@ texSaveFig("test.pdf")
 ```
 
 ## FAQ
-**Linux: Why is the font in the PDF figure not Times New Romon?** 
+**Linux: Why is the font in the PDF figure not Times New Roman?** 
 
 You may have to install the msttcorefonts package:
 ```bash
