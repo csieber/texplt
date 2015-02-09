@@ -56,7 +56,8 @@ def texFigure(fig_width=None, fig_height=None, columns=1, font_scale = 100, **kw
               'ytick.labelsize': font_size,
               'text.usetex': True,
               'figure.figsize': [fig_width,fig_height],
-              'font.family': 'serif'
+              'font.family': 'serif',
+              'font.serif' : ['Times']
     }
 
     plt.rcParams.update(params)

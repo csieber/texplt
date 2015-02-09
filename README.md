@@ -2,6 +2,10 @@
 
 *texplt* is a set of python scripts to prepare matplotlib figures for publishing. Tested with IEEE LaTex style. Based on latexify [1].
 
+## Installation
+
+Copy or symlink the **texplt/texplt** folder containing the python package into your project folder.
+
 ## Usage
 
 First import the two functions texSaveFig and texFigure.
@@ -25,6 +29,14 @@ texFigure()
 plot(list(range(1, 10)))
 
 texSaveFig("test.pdf")
+```
+
+## FAQ
+**Linux: Why is the font in the PDF figure not Times New Romon?** 
+
+You may have to install the msttcorefonts package:
+```bash
+sudo apt-get --reinstall install msttcorefonts
 ```
 
 ## References
