@@ -12,7 +12,12 @@ import matplotlib.pyplot as plt
 from math import sqrt
 
 
-def texFigure(fig_width=None, fig_height=None, columns=1, font_scale = 100, **kwargs):
+def texFigure(fig_width = None, 
+              fig_height = None, 
+              columns = 1, 
+              font_size = 8, 
+              font_scale = 100, 
+              **kwargs):
     """
     Replaces matplotlib's figure() call and uses Latex-friendly default values.    
 
@@ -24,6 +29,8 @@ def texFigure(fig_width=None, fig_height=None, columns=1, font_scale = 100, **kw
         Force a specific height of the figure.
     columns: {1, 2}, optional
         Set one or two column style mode.
+    font_size: float, optional
+        Set all fonts in the figure to a specific size. Default: 8
     font_scale: float, optional
         Scale all fonts in the figure. Default: 100 %
     """
@@ -44,7 +51,7 @@ def texFigure(fig_width=None, fig_height=None, columns=1, font_scale = 100, **kw
         
         fig_height = MAX_HEIGHT_INCHES
         
-    font_size = 7.5 * (font_scale / 100)
+    font_size = font_size * (font_scale / 100)
 
     params = {'backend': 'ps',
               'text.latex.preamble': [r'\usepackage{gensymb}'],

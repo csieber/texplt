@@ -39,6 +39,13 @@ You may have to install the msttcorefonts package:
 sudo apt-get --reinstall install msttcorefonts
 ```
 
+Afterwards you may have to clear your matplotlib font cache:
+
+```bash
+rm -r ~/.matplotlib/tex.cache/
+rm -r ~/.cache/matplotlib/tex.cache/
+```
+
 ## References
 
 [1] http://nipunbatra.github.io/2014/08/latexify/
