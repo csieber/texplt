@@ -64,7 +64,9 @@ def texFigure(fig_width = None,
               'text.usetex': True,
               'figure.figsize': [fig_width,fig_height],
               'font.family': 'serif',
-              'font.serif' : ['Times']
+              'font.serif' : ['Times'],
+              'grid.alpha': 0.4,
+              'axes.grid': True
     }
 
     plt.rcParams.update(params)
