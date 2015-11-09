@@ -1,4 +1,4 @@
 
-from .texplt import texFigure, texSaveFig
+from .texplt import texFigure, texSaveFig, strToTex
 
 

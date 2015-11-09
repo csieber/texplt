@@ -89,3 +89,7 @@ def texSaveFig(fname, **kwargs):
     
     return plt.savefig(fname, **kwargs)
     
+
+def strToTex(string):
+    return string.replace('_','\_')
+    
