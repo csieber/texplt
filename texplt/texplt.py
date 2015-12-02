@@ -57,7 +57,6 @@ def texFigure(fig_width = None,
               'text.latex.preamble': [r'\usepackage{gensymb}'],
               'axes.labelsize': font_size, # fontsize for x and y labels (was 10)
               'axes.titlesize': font_size,
-              'text.fontsize': font_size, # was 10
               'legend.fontsize': font_size, # was 10
               'xtick.labelsize': font_size,
               'ytick.labelsize': font_size,
@@ -65,6 +64,7 @@ def texFigure(fig_width = None,
               'figure.figsize': [fig_width,fig_height],
               'font.family': 'serif',
               'font.serif' : ['Times'],
+              'font.size': font_size, # was 10
               'grid.alpha': 0.4,
               'axes.grid': True
     }
