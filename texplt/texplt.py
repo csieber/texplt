@@ -84,7 +84,7 @@ def texSaveFig(fname, **kwargs):
     if 'bbox_inches' not in kwargs:
         kwargs['bbox_inches'] = 'tight'
     
-    if 'kwargs' not in kwargs:
+    if 'pad_inches' not in kwargs:
         kwargs['pad_inches'] = 0
     
     return plt.savefig(fname, **kwargs)
